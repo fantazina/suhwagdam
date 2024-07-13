@@ -47,7 +47,7 @@ logging:
 spring:
   config:
     activate:
-      on-profile: local
+      on-profile: common
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://sunkyoung.store:3306/suhwagdamdb
