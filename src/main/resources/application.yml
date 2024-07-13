@@ -6,8 +6,8 @@ spring:
         - common
       prod:
         - common
-#server:
-#  port: 8080
+server:
+ port: 8080
 ---
 
 spring:
@@ -50,8 +50,8 @@ spring:
       on-profile: local
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-#    url: jdbc:mysql://sunkyoung.store:3306/suhwagdam
-    url: jdbc:mysql://localhost:3306/suhwagdam
+    url: jdbc:mysql://sunkyoung.store:3306/suhwagdam
+    # url: jdbc:mysql://localhost:3306/suhwagdam
     username: root
     password: 1234
   jpa:
@@ -62,13 +62,13 @@ spring:
       hibernate:
         jdbc:
           time_zone: Asia/Seoul
-#  jpa:
-#    properties:
-#      hibernate:
-#        dialect: org.hibernate.dialect.MySQLDialect
+ jpa:
+   properties:
+     hibernate:
+       dialect: org.hibernate.dialect.MySQLDialect
   data:
     redis:
       repositories:
         enabled: false
-      url: redis://localhost:6379
-#      url: redis://sunkyoung.store:6379
+      # url: redis://localhost:6379
+        url: redis://sunkyoung.store:6379
